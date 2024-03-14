@@ -12,7 +12,6 @@
 /* global WebImporter */
 /* eslint-disable no-console, class-methods-use-this */
 
-
 const createMetadata = (main, document) => {
   const meta = {};
 
@@ -26,13 +25,13 @@ const createMetadata = (main, document) => {
     meta.Description = desc.content;
   }
 
-  const noscript = main.querySelector("noscript");
+  const noscript = main.querySelector('noscript');
   if (noscript) noscript.remove();
 
-  const header = main.querySelector(".header");
+  const header = main.querySelector('.header');
   if (header) header.remove();
 
-  const footer = main.querySelector(".footer.section");
+  const footer = main.querySelector('.footer.section');
   if (footer) footer.remove();
 
   main.querySelectorAll('iframe').forEach((el) => el.remove());
