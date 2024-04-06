@@ -207,7 +207,7 @@ function populatePerformanceMetrics(div, config, {
 async function decorateExperimentPill(overlay) {
   const config = window?.hlx?.experiment;
   const experiment = toClassName(getMetadata('experiment'));
-  console.log('preview experiment', experiment);
+  // console.log('preview experiment', experiment);
   if (!experiment || !config) {
     return;
   }
@@ -245,6 +245,6 @@ export default async function decorateExperimentationOverlay() {
     const overlay = getOverlay();
     await decorateExperimentPill(overlay);
   } catch (e) {
-    console.log(e);
+    // console.log(e);
   }
 }
