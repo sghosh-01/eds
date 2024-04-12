@@ -124,7 +124,7 @@ function sampleRUM(checkpoint, data = {}) {
       sampleRUM.always[checkpoint](data);
     }
   } catch (error) {
-    // something went wrong
+    //  something went wrong
   }
 }
 
